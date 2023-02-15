@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moovebe/home_page/widgets/conta_widgets.dart';
+import 'package:moovebe/home_page/widgets/list_widgets.dart';
 import 'package:moovebe/seat_page/seat.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          const ContFeiled(),
+          const ListField(),
           const Padding(
             padding: EdgeInsets.only(left: 20, top: 20),
             child: Text(
@@ -63,10 +63,11 @@ class HomeScreen extends StatelessWidget {
                         ));
                   },
                   child: Container(
-                      height: MediaQuery.of(context).size.height * 0.08,
-                      width: MediaQuery.of(context).size.width * 0.11,
-                      color: const Color.fromARGB(255, 217, 214, 214),
-                      child: Stack(children: [
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    width: MediaQuery.of(context).size.width * 0.11,
+                    color: const Color.fromARGB(255, 217, 214, 214),
+                    child: Stack(
+                      children: [
                         Padding(
                           padding: const EdgeInsets.only(left: 90),
                           child: Container(
@@ -75,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                               color: const Color.fromARGB(255, 248, 246, 246)),
                         ),
                         Image.asset(
-                          'assets/image/image 3.png',
+                          'assets/image/busleadingimg.png',
                           height: MediaQuery.of(context).size.height * 0.24,
                           width: MediaQuery.of(context).size.width * 0.24,
                         ),
@@ -104,7 +105,9 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               ),
                             ))
-                      ])),
+                      ],
+                    ),
+                  ),
                 ),
               );
             },

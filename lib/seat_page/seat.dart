@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moovebe/seat_page/widgets/seating.dart';
 
-
-
 class Seat extends StatelessWidget {
   const Seat({super.key});
 
@@ -57,7 +55,7 @@ class Seat extends StatelessWidget {
                         left: 17,
                       ),
                       child: Image.asset(
-                        'assets/image/99-996004_get-driving-directions-car-driver-removebg-preview 1.png',
+                        'assets/image/driver.png',
                         height: MediaQuery.of(context).size.height * 0.10,
                         width: MediaQuery.of(context).size.width * 0.10,
                         fit: BoxFit.cover,

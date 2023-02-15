@@ -10,10 +10,10 @@ class GetStartedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: red,
-      body: const Center(
-        // child: Image(
-        //   image: logoAsset,
-        // ),
+      body: Center(
+        child: Image.asset(
+          'assets/image/Group 1.png',
+        ),
       ),
       floatingActionButton: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -22,12 +22,12 @@ class GetStartedScreen extends StatelessWidget {
           child: CustomElevatedBtnWidget(
             btnText: 'Get Started',
             onpressed: () {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) => LoginScreen(),
-              ),
-            );
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LoginScreen(),
+                ),
+              );
             },
             btnTextColor: red,
           ),
